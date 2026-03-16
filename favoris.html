@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Repas Favoris - CookIZY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo CookIZY" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="ingredients.html">Trouver des Recettes</a>
+            <a href="favoris.html">Repas Favoris</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="apropos.html">Qui est CookIZY</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="favorites-section">
+            <h1>Mes Repas Favoris</h1>
+            <p>Découvrez et gérez vos recettes préférées</p>
+
+            <div class="favorites-controls">
+                <div class="filter-buttons">
+                    <button class="btn filter-btn active" data-filter="all">Tous</button>
+                    <button class="btn filter-btn" data-filter="breakfast">Petit-déjeuner</button>
+                    <button class="btn filter-btn" data-filter="lunch">Déjeuner</button>
+                    <button class="btn filter-btn" data-filter="dinner">Dîner</button>
+                    <button class="btn filter-btn" data-filter="dessert">Dessert</button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Rechercher dans vos favoris...">
+                </div>
+            </div>
+
+            <div id="favorites-grid" class="favorites-grid">
+                <!-- Favorites will be loaded dynamically from database -->
+            </div>
+
+            <div id="no-favorites" class="no-favorites" style="display: none;">
+                <h3>Aucun repas favori trouvé</h3>
+                <p>Vous n'avez pas encore ajouté de recettes à vos favoris. <a href="ingredients.html">Découvrez de nouvelles recettes !</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CookIZY. Tous droits réservés.</p>
+        <nav>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="favoris.js"></script>
+</body>
+</html>

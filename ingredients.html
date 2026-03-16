@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Trouver des Recettes - CookIZY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo CookIZY" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="ingredients.html">Trouver des Recettes</a>
+            <a href="favoris.html">Repas Favoris</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="apropos.html">Qui est CookIZY</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="ingredient-section">
+            <h1>Trouvez des Recettes avec Vos Ingrédients</h1>
+            <p>Ajoutez les ingrédients que vous avez et découvrez des recettes délicieuses !</p>
+
+            <div class="input-group">
+                <input type="text" id="ingredient-input" placeholder="Entrez un ingrédient (ex: poulet, tomate, riz)">
+                <button id="add-btn" class="btn">Ajouter</button>
+            </div>
+
+            <div class="ingredients-list">
+                <h3>Vos Ingrédients :</h3>
+                <ul id="ingredients-ul"></ul>
+                <button id="clear-btn" class="btn btn-secondary">Effacer Tout</button>
+            </div>
+
+            <button id="find-recipes-btn" class="btn btn-primary">Trouver des Recettes</button>
+        </div>
+
+        <div id="recipes-section" class="recipes-results" style="display: none;">
+            <h2>Recettes Disponibles</h2>
+            <div id="recipes-container" class="recipes-grid">
+                <!-- Recipes will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CookIZY. Tous droits réservés.</p>
+        <nav>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="ingredients.js"></script>
+</body>
+</html>

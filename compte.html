@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Compte - CookIZY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo CookIZY" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="ingredients.html">Trouver des Recettes</a>
+            <a href="favoris.html">Repas Favoris</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="apropos.html">Qui est CookIZY</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="account-section">
+            <h1>Mon Compte</h1>
+            <div class="account-grid">
+                <div class="account-card">
+                    <h2>Informations Personnelles</h2>
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" alt="Avatar" id="profile-avatar">
+                            <button class="btn btn-small" id="change-avatar">Changer</button>
+                        </div>
+                        <div class="profile-details">
+                            <div id="profile-display">
+                                <p><strong>Nom:</strong> <span id="display-name">Jean Dupont</span></p>
+                                <p><strong>Email:</strong> <span id="display-email">jean.dupont@email.com</span></p>
+                                <p><strong>Membre depuis:</strong> Janvier 2024</p>
+                                <button class="btn" id="edit-profile-btn">Modifier le Profil</button>
+                            </div>
+                            <form id="profile-edit-form" style="display: none;">
+                                <div class="form-group">
+                                    <label for="edit-name">Nom complet</label>
+                                    <input type="text" id="edit-name" value="Jean Dupont" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-email">Email</label>
+                                    <input type="email" id="edit-email" value="jean.dupont@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-phone">Téléphone</label>
+                                    <input type="tel" id="edit-phone" placeholder="06 12 34 56 78">
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn">Sauvegarder</button>
+                                    <button type="button" class="btn btn-secondary" id="cancel-edit">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <h2>Préférences Alimentaires</h2>
+                    <div class="preferences">
+                        <div class="preference-item">
+                            <label>
+                                <input type="checkbox" checked> Végétarien
+                            </label>
+                        </div>
+                        <div class="preference-item">
+                            <label>
+                                <input type="checkbox"> Sans gluten
+                            </label>
+                        </div>
+                        <div class="preference-item">
+                            <label>
+                                <input type="checkbox" checked> Halal
+                            </label>
+                        </div>
+                        <div class="preference-item">
+                            <label>
+                                <input type="checkbox"> Vegan
+                            </label>
+                        </div>
+                        <button class="btn">Sauvegarder</button>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <h2>Historique des Recettes</h2>
+                    <div class="recipe-history">
+                        <div class="history-item">
+                            <img src="https://images.unsplash.com/photo-1532636875304-0c89119d9b4e?auto=format&fit=crop&w=100&q=80" alt="Poulet aux légumes">
+                            <div>
+                                <h4>Poulet aux Légumes</h4>
+                                <p>Préparé le 15 mars 2026</p>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=100&q=80" alt="Pâtes à la tomate">
+                            <div>
+                                <h4>Pâtes à la Tomate</h4>
+                                <p>Préparé le 12 mars 2026</p>
+                            </div>
+                        </div>
+                        <button class="btn">Voir Tout l'Historique</button>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <h2>Paramètres du Compte</h2>
+                    <div class="account-settings">
+                        <button class="btn btn-secondary">Changer le Mot de Passe</button>
+                        <button class="btn btn-secondary">Notifications</button>
+                        <button class="btn btn-danger">Supprimer le Compte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CookIZY. Tous droits réservés.</p>
+        <nav>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="compte.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ingredients</title>
+</head>
+<body>
+    <h1>Test Ingredients Page</h1>
+    <div id="test-output"></div>
+
+    <script src="ingredients.js"></script>
+    <script>
+        // Simple test to check if the script loads
+        setTimeout(() => {
+            const output = document.getElementById('test-output');
+            if (typeof allRecipes !== 'undefined') {
+                output.innerHTML = `Loaded ${allRecipes.length} recipes successfully!`;
+            } else {
+                output.innerHTML = 'Error: allRecipes not defined';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

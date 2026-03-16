@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Standard Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo CookIZY" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="ingredients.html">Trouver des Recettes</a>
+            <a href="favoris.html">Repas Favoris</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="apropos.html">Qui est CookIZY</a>            <a href="auth.html" style="margin-left: auto; color: #ffd700;">Se connecter</a>        </nav>
+    </header>
+    <div class="slider">
+        <div class="slider-content">
+            <h2>Bienvenue sur CookIZY</h2>
+            <p>Plus simple, plus rapide et efficace : Régalez-vous en quelques cliques.</p>
+            <a href="ingredients.html" class="btn slider-btn">Commencer</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Slider Image" id="slider-img">
+        <button class="prev" id="prev-btn">&lt;</button>
+        <button class="next" id="next-btn">&gt;</button>
+        <div class="dots" id="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>Tu veux manger quoi ?</h2>
+            <p>Qu'est-ce que t'as au frigo.</p>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Recettes">
+            <a class="btn" href="ingredients.html" target="_blank">Allons trouver des recettes</a>
+        </div>
+        <div class="column">
+            <h2>Decouvrez des plats tout prets</h2>
+            <p>Des plats prêts à cuisiner en quelques minutes.</p>
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Planification">
+            <a class="btn" href="page2.html" target="_blank">Regardes les plats</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 CookIZY. Tous droits réservés.</p>
+        <nav>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="apropos.html">Contact</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Update navigation based on login status
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const loginLink = nav.querySelector('a[href="auth.html"]');
+
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                // User is logged in - show logout instead of login
+                loginLink.textContent = 'Se déconnecter';
+                loginLink.href = '#';
+                loginLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+                        localStorage.removeItem('isLoggedIn');
+                        location.reload();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
