@@ -19,7 +19,7 @@ def generate_recipes():
     recipe_templates = [
         # Breakfast recipes
         {"name": "Omelette aux {}", "category": "breakfast", "time": "15 min", "difficulty": "Facile"},
-        {"name": "Pancakes à la {}", "category": "breakfast", "time": "20 min", "difficulty": "Facile"},
+        {"name": "Pancakes de {}", "category": "breakfast", "time": "20 min", "difficulty": "Facile"},
         {"name": "Smoothie {} et {}", "category": "breakfast", "time": "5 min", "difficulty": "Facile"},
         {"name": "Yaourt grec au {} et {}", "category": "breakfast", "time": "10 min", "difficulty": "Facile"},
         {"name": "Tartines grillées au {} et {}", "category": "breakfast", "time": "10 min", "difficulty": "Facile"},
