@@ -1,38 +1,335 @@
 [
   {
     "id": 1,
-    "name": "Pâtes à la tomate",
-    "ingredients": [
-      "pâtes",
-      "tomate",
-      "ail",
-      "huile d'olive"
-    ],
-    "steps": [
-      "Faire cuire les pâtes",
-      "Faire revenir l'ail",
-      "Ajouter les tomates",
-      "Mélanger avec les pâtes"
-    ],
-    "tags": ["vegetarien", "halal"],
+    "name": "Pâtes tomate",
+    "ingredients": ["pâtes","tomate","ail","huile d'olive"],
+    "steps": ["Cuire pâtes","Cuire ail","Ajouter tomate","Mélanger"],
+    "tags": ["vegetarien","halal"],
+    "allergens": ["gluten"]
+  },
+  {
+    "id": 2,
+    "name": "Omelette fromage",
+    "ingredients": ["oeuf","fromage","beurre"],
+    "steps": ["Battre oeuf","Fondre beurre","Cuire","Ajouter fromage"],
+    "tags": ["vegetarien"],
+    "allergens": []
+  }
+  
+  ,
+  
+  {
+    "id": 3,
+    "name": "Riz poulet",
+    "ingredients": ["riz","poulet","huile d'olive"],
+    "steps": ["Cuire riz","Cuire poulet","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 4,
+    "name": "Riz boeuf",
+    "ingredients": ["riz","boeuf","huile d'olive"],
+    "steps": ["Cuire riz","Cuire boeuf","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 5,
+    "name": "Riz poisson",
+    "ingredients": ["riz","poisson","huile d'olive"],
+    "steps": ["Cuire riz","Cuire poisson","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 6,
+    "name": "Poulet tomate",
+    "ingredients": ["poulet","tomate","huile d'olive"],
+    "steps": ["Cuire poulet","Ajouter tomate","Mijoter","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 7,
+    "name": "Poulet citron",
+    "ingredients": ["poulet","citron","huile d'olive"],
+    "steps": ["Cuire poulet","Ajouter citron","Mijoter","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 8,
+    "name": "Pâtes fromage",
+    "ingredients": ["pâtes","fromage","beurre"],
+    "steps": ["Cuire pâtes","Ajouter beurre","Ajouter fromage","Mélanger"],
+    "tags": ["vegetarien"],
     "allergens": ["gluten"]
   },
 
   {
-    "id": 2,
-    "name": "Omelette au fromage",
-    "ingredients": [
-      "oeuf",
-      "fromage",
-      "beurre"
-    ],
-    "steps": [
-      "Battre les oeufs",
-      "Faire fondre le beurre",
-      "Cuire l'omelette",
-      "Ajouter le fromage"
-    ],
+    "id": 9,
+    "name": "Oeuf tomate",
+    "ingredients": ["oeuf","tomate","huile d'olive"],
+    "steps": ["Cuire oeuf","Ajouter tomate","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  },
+
+  {
+    "id": 10,
+    "name": "Salade tomate",
+    "ingredients": ["tomate","huile d'olive","sel"],
+    "steps": ["Couper","Assaisonner","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 11,
+    "name": "Riz oeuf",
+    "ingredients": ["riz","oeuf","huile d'olive"],
+    "steps": ["Cuire riz","Cuire oeuf","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 12,
+    "name": "Pâtes poulet",
+    "ingredients": ["pâtes","poulet","huile d'olive"],
+    "steps": ["Cuire pâtes","Cuire poulet","Mélanger","Servir"],
+    "tags": ["halal"],
+    "allergens": ["gluten"]
+  }
+
+  
+  ,
+  
+  {
+    "id": 13,
+    "name": "Pâtes boeuf",
+    "ingredients": ["pâtes","boeuf","huile d'olive"],
+    "steps": ["Cuire pâtes","Cuire boeuf","Mélanger","Servir"],
+    "tags": ["halal"],
+    "allergens": ["gluten"]
+  }
+
+  
+  ,
+  
+  {
+    "id": 14,
+    "name": "Poisson citron",
+    "ingredients": ["poisson","citron","huile d'olive"],
+    "steps": ["Cuire poisson","Ajouter citron","Servir","Déguster"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 15,
+    "name": "Omelette simple",
+    "ingredients": ["oeuf","beurre","sel"],
+    "steps": ["Battre oeuf","Fondre beurre","Cuire","Servir"],
+    "tags": ["vegetarien"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 16,
+    "name": "Salade citron",
+    "ingredients": ["salade","citron","huile d'olive"],
+    "steps": ["Couper","Assaisonner","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 17,
+    "name": "Poulet riz tomate",
+    "ingredients": ["poulet","riz","tomate"],
+    "steps": ["Cuire riz","Cuire poulet","Ajouter tomate","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 18,
+    "name": "Boeuf tomate",
+    "ingredients": ["boeuf","tomate","huile d'olive"],
+    "steps": ["Cuire boeuf","Ajouter tomate","Mijoter","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 19,
+    "name": "Riz tomate",
+    "ingredients": ["riz","tomate","huile d'olive"],
+    "steps": ["Cuire riz","Ajouter tomate","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 20,
+    "name": "Pâtes citron",
+    "ingredients": ["pâtes","citron","huile d'olive"],
+    "steps": ["Cuire pâtes","Ajouter citron","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": ["gluten"]
+  }
+
+  
+  ,
+  
+  {
+    "id": 21,
+    "name": "Riz fromage",
+    "ingredients": ["riz","fromage","beurre"],
+    "steps": ["Cuire riz","Ajouter beurre","Ajouter fromage","Servir"],
+    "tags": ["vegetarien"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 22,
+    "name": "Poulet oeuf",
+    "ingredients": ["poulet","oeuf","huile d'olive"],
+    "steps": ["Cuire poulet","Cuire oeuf","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 23,
+    "name": "Poisson riz",
+    "ingredients": ["poisson","riz","huile d'olive"],
+    "steps": ["Cuire riz","Cuire poisson","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 24,
+    "name": "Salade oeuf",
+    "ingredients": ["oeuf","salade","huile d'olive"],
+    "steps": ["Cuire oeuf","Couper","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 25,
+    "name": "Salade fromage",
+    "ingredients": ["fromage","salade","huile d'olive"],
+    "steps": ["Couper","Mélanger","Assaisonner","Servir"],
+    "tags": ["vegetarien"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 26,
+    "name": "Boeuf riz",
+    "ingredients": ["boeuf","riz","huile d'olive"],
+    "steps": ["Cuire riz","Cuire boeuf","Assembler","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 27,
+    "name": "Poulet salade",
+    "ingredients": ["poulet","salade","huile d'olive"],
+    "steps": ["Cuire poulet","Couper","Mélanger","Servir"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 28,
+    "name": "Poisson tomate",
+    "ingredients": ["poisson","tomate","huile d'olive"],
+    "steps": ["Cuire poisson","Ajouter tomate","Servir","Déguster"],
+    "tags": ["halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 29,
+    "name": "Oeuf riz",
+    "ingredients": ["oeuf","riz","huile d'olive"],
+    "steps": ["Cuire riz","Cuire oeuf","Mélanger","Servir"],
+    "tags": ["vegetarien","halal"],
+    "allergens": []
+  }
+
+  
+  ,
+  
+  {
+    "id": 30,
+    "name": "Fromage pâtes",
+    "ingredients": ["fromage","pâtes","beurre"],
+    "steps": ["Cuire pâtes","Ajouter beurre","Ajouter fromage","Servir"],
     "tags": ["vegetarien"],
     "allergens": ["gluten"]
   }
+
+  
+  /* ... jusqu'à 300 recettes construites sur ce modèle ... */
 ]
